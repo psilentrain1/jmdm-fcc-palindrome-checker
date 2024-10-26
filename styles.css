@@ -1,0 +1,75 @@
+:root {
+  --clr-primary-50: #f6faf3;
+  --clr-primary-100: #e9f5e3;
+  --clr-primary-200: #d3eac8;
+  --clr-primary-300: #afd89d;
+  --clr-primary-400: #82bd69;
+  --clr-primary-500: #61a146;
+  --clr-primary-600: #4c8435;
+  --clr-primary-700: #3d692c;
+  --clr-primary-800: #345427;
+  --clr-primary-900: #2b4522;
+  --clr-primary-950: #13250e;
+
+  --lin-grad-primary: linear-gradient(45deg, var(--clr-primary-400), var(--clr-primary-600));
+}
+
+body {
+  background: var(--clr-primary-100);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.card {
+  background: var(--lin-grad-primary);
+  color: white;
+  border: 1px solid var(--clr-primary-600);
+  border-radius: 20px;
+  width: 750px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card button {
+  background: linear-gradient(var(--clr-primary-700), var(--clr-primary-800));
+  width: 120px;
+  height: 40px;
+  margin: 20px;
+  border: none;
+  border-radius: 0px;
+  color: white;
+}
+
+.card button:active {
+  background: linear-gradient(var(--clr-primary-900), var(--clr-primary-950));
+}
+
+.card button:hover {
+  background: linear-gradient(var(--clr-primary-800), var(--clr-primary-900));
+  cursor: pointer;
+}
+
+.card input {
+  width: 400px;
+  height: 30px;
+}
